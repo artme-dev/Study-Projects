@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BigImageView" customModule="URLSession" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="hNQ-C6-Ua0" id="2o7-Ld-JGB"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="f3C-p7-fCO"/>
+                <outlet property="imageView" destination="K9s-HX-h8e" id="MXn-RT-Oea"/>
+                <outlet property="indicator" destination="8yP-K0-zb3" id="iHg-fi-4K2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-HX-h8e">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="8yP-K0-zb3">
+                    <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNQ-C6-Ua0">
+                    <rect key="frame" x="181" y="432.5" width="52" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Load"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hNQ-C6-Ua0" firstAttribute="centerX" secondItem="K9s-HX-h8e" secondAttribute="centerX" id="4d1-wY-DeJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="K9s-HX-h8e" secondAttribute="bottom" id="933-hX-KBa"/>
+                <constraint firstItem="8yP-K0-zb3" firstAttribute="centerY" secondItem="K9s-HX-h8e" secondAttribute="centerY" id="Bez-ap-PR7"/>
+                <constraint firstItem="8yP-K0-zb3" firstAttribute="centerX" secondItem="K9s-HX-h8e" secondAttribute="centerX" id="FlC-qv-ouw"/>
+                <constraint firstItem="K9s-HX-h8e" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KUN-We-lbw"/>
+                <constraint firstItem="hNQ-C6-Ua0" firstAttribute="centerY" secondItem="K9s-HX-h8e" secondAttribute="centerY" id="KXZ-2s-FZ3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K9s-HX-h8e" secondAttribute="trailing" id="Wdd-up-g3s"/>
+                <constraint firstItem="K9s-HX-h8e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hv0-lG-LRs"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="109"/>
+        </view>
+        <viewController id="MWW-lj-9CT">
+            <view key="view" contentMode="scaleToFill" id="cCx-kg-klp">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <viewLayoutGuide key="safeArea" id="c1m-Uk-zA1"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            </view>
+            <point key="canvasLocation" x="799" y="126"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
